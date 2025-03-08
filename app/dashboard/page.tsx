@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
 
-const Page = async (props: Props) => {
+
+const Page = async () => {
   // for time delay
   await new Promise((resolve) => setTimeout(resolve, 2000));
   

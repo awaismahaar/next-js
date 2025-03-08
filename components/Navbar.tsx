@@ -8,9 +8,9 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-type Props = {};
 
-const Navbar = async (props: Props) => {
+
+const Navbar = async () => {
   const { getUser, isAuthenticated } = getKindeServerSession();
   const user = await getUser();
   const isUserAuthenticated = await isAuthenticated();

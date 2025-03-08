@@ -1,6 +1,5 @@
 import { handleSubmission } from "@/app/action";
 import SubmittingButton from "@/components/SubmittingButton";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -13,9 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = () => {
   return (
     <div className="max-w-lg mx-auto">
       <Card>
@@ -28,7 +25,12 @@ const Page = (props: Props) => {
             {/* form fields */}
             <div className="flex flex-col gap-2">
               <Label>Enter Text</Label>
-              <Input name="title" required type="text" placeholder="Enter Text" />
+              <Input
+                name="title"
+                required
+                type="text"
+                placeholder="Enter Text"
+              />
             </div>
             <div className="flex flex-col gap-2">
               <Label>Enter Content</Label>
@@ -36,9 +38,14 @@ const Page = (props: Props) => {
             </div>
             <div className="flex flex-col gap-2">
               <Label>Enter ImageURL</Label>
-              <Input name="imageUrl" required type="text" placeholder="Enter URL" />
+              <Input
+                name="imageUrl"
+                required
+                type="text"
+                placeholder="Enter URL"
+              />
             </div>
-            <SubmittingButton/>
+            <SubmittingButton />
           </form>
         </CardContent>
       </Card>

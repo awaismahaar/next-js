@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { useFormStatus } from "react-dom";
 
-type Props = {};
+
 
 const SubmittingButton = () => {
   const { pending } = useFormStatus();
